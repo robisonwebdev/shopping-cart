@@ -3,6 +3,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  background-color: #000;
+  color: #fff;
+  height: 5vh;
+  padding: 0 10px;
 }
 
 #navLinks {
