@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav>
-            <Link className='navTitle' to='/'><h3 >Temp Site Name</h3></Link>
+            <Link className='navLink' to='/'><h3 >Temp Site Name</h3></Link>
             <ul id='navLinks'>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Cart</li>
+                <Link className='navLink' to='/'><li>Home</li></Link>
+                <Link className='navLink' to='/shop'><li>Shop</li></Link>
+                <Link className='navLink' to='/cart'><li>Cart</li></Link>
             </ul>
         </nav>
     );
