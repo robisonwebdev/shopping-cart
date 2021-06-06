@@ -20,3 +20,8 @@ nav {
   font-size: 22px;
   list-style: none;
 }
+
+#navLinks li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
