@@ -56,3 +56,5 @@ const products = [
         description: 'Sed dolor dolor, mattis in mi in, commodo auctor nulla. Mauris interdum pharetra lacinia. Maecenas dapibus enim orci, eu rutrum felis placerat vel. Aenean lacinia feugiat lacus vitae consectetur.'
     }
 ]
+
+export default products;
