@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import products from '../products/productsInformation';
+import '../styles/Shop.css';
 
 const Shop = () => {
     const mappedData = products.map((item) => <ProductCard {...item} key={item.id} />);
