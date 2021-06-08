@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.shopTitle {
+  font-size: 40px;
+  margin: 30px 0;
+}
+
 .products {
   display: flex;
   flex-flow: row wrap;
@@ -12,5 +17,6 @@
   justify-content: center;
   gap: 20px;
 
-  padding: 25px;
+  padding: 0 25px;
+  margin-bottom: 30px;
 }
