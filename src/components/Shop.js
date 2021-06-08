@@ -7,7 +7,10 @@ const Shop = () => {
 
     return (
         <div className='shop'>
-            {mappedData}
+            <h2 className='shopTitle'>Bird Houses</h2>
+            <div className='products'>
+                {mappedData}
+            </div>
         </div>
     );
 }
