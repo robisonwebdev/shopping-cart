@@ -6,4 +6,11 @@
 
 body {
   font-family: 'Mate SC', serif;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
