@@ -6,7 +6,8 @@ nav {
 
   background-color: #000;
   color: #fff;
-  min-height: 5vh;
+  min-height: 5%;
+  width: 100%;
   padding: 0 20px;
 }
 
