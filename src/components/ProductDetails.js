@@ -15,8 +15,9 @@ const ProductDetails = ({ match }) => {
     }
 
     return (
-        <div>
-            <h1>{product.title}</h1>
+        <div className='productDetails'>
+            <div className='leftDetailsContainer'></div>
+            <div className='rightDetailsContainer'></div>
         </div>
     );
 }
