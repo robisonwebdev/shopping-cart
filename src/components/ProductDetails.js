@@ -19,7 +19,13 @@ const ProductDetails = ({ match }) => {
             <div className='leftDetailsContainer'>
                 <img src={product.image} alt={product.title} />
             </div>
-            <div className='rightDetailsContainer'></div>
+            <div className='rightDetailsContainer'>
+                <h3>{product.title}</h3>
+                <p>
+                    <strong>About the house: </strong>
+                    {product.description}
+                </p>
+            </div>
         </div>
     );
 }
