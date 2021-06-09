@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const ProductDetails = () => {
+const ProductDetails = ({ match }) => {
+    const [product, setProduct] = useState({});
+
     return (
         <div>
-            ProductDetails
+            
         </div>
     );
 }
