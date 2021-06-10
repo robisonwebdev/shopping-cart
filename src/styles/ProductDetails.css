@@ -20,7 +20,7 @@
 }
 
 .leftDetailsContainer,
-.rightDetailsContainer {
+.rightProductDetails {
   height: 80%;
   width: 100%;
 }
@@ -31,7 +31,7 @@
   object-fit: cover;
 }
 
-.rightDetailsContainer {
+.rightProductDetails {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
