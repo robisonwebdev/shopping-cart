@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const BackButton = () => {
     return (
-        <div>
+        <div className='backButton'>
             <Link to='/shop'><button>Go Back</button></Link>
         </div>
     );
