@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/AddToCartButton.css';
 
 const AddToCartButton = () => {
     return (
