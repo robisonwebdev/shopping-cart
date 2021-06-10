@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import products from '../products/productsInformation.js';
+import BackButton from '../components/BackButton';
 import '../styles/ProductDetails.css';
 
 const ProductDetails = ({ match }) => {
@@ -28,7 +29,9 @@ const ProductDetails = ({ match }) => {
                             {product.description}
                         </p>
                     </div>
-                    <div className='rightBottom'></div>
+                    <div className='rightBottom'>
+                        <BackButton />
+                    </div>
                 </div>
                 </div>
         </div>
