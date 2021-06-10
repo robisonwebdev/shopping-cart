@@ -24,11 +24,13 @@ const ProductDetails = ({ match }) => {
                 </div>
                 <div className='rightProductDetails'>
                     <div className='rightTop'>
-                        <h2>{product.title}</h2>
-                        <p>
-                            <strong>About the house: </strong>
-                            {product.description}
-                        </p>
+                        <div>
+                            <h2>{product.title}</h2>
+                            <p>
+                                <strong>About the house: </strong>
+                                {product.description}
+                            </p>
+                        </div>
                         <AddToCartButton />
                     </div>
                     <div className='rightBottom'>
