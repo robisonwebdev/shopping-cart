@@ -19,13 +19,13 @@
   width: 100%;
 }
 
-.leftDetailsContainer,
+.leftProductDetails,
 .rightProductDetails {
   height: 80%;
   width: 100%;
 }
 
-.leftDetailsContainer img {
+.leftProductDetails img {
   width: 100%;
   height: 100%;
   object-fit: cover;
