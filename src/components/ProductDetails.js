@@ -18,7 +18,7 @@ const ProductDetails = ({ match }) => {
 
     return (
         <div className='productDetails'>
-            <div className='productDetailsContainer'>
+            <div className='productContainer'>
                 <div className='leftDetailsContainer'>
                     <img src={product.image} alt={product.title} />
                 </div>
@@ -35,7 +35,7 @@ const ProductDetails = ({ match }) => {
                         <BackButton />
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     );
 }
