@@ -34,7 +34,7 @@ const ProductDetails = ({ match }) => {
                         <AddToCartButton />
                     </div>
                     <div className='rightBottom'>
-                        <BackButton />
+                        <BackButton text='Go Back' />
                     </div>
                 </div>
             </div>
