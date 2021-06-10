@@ -1,0 +1,8 @@
+.addToCartButton button {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 8px 30px;
+}
