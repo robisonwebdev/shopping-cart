@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BackButton = () => {
     return (
         <div>
-            BackButton
+            <Link to='/shop'><button>Go Back</button></Link>
         </div>
     );
 }
