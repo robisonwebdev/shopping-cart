@@ -2,9 +2,7 @@ import React from 'react';
 
 const CheckoutButton = () => {
     return (
-        <div>
-            CheckoutButton
-        </div>
+        <button>Add to cart</button>
     );
 }
 
