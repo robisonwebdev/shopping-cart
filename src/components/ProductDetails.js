@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import products from '../products/productsInformation.js';
 import BackButton from '../components/BackButton';
+import AddToCartButton from './AddToCartButton.js';
 import '../styles/ProductDetails.css';
 
 const ProductDetails = ({ match }) => {
@@ -28,6 +29,7 @@ const ProductDetails = ({ match }) => {
                             <strong>About the house: </strong>
                             {product.description}
                         </p>
+                        <AddToCartButton />
                     </div>
                     <div className='rightBottom'>
                         <BackButton />
