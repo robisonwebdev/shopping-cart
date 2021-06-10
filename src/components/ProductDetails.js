@@ -28,6 +28,7 @@ const ProductDetails = ({ match }) => {
                             {product.description}
                         </p>
                     </div>
+                    <div className='rightBottom'></div>
                 </div>
                 </div>
         </div>
