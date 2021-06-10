@@ -21,11 +21,13 @@ const ProductDetails = ({ match }) => {
                     <img src={product.image} alt={product.title} />
                 </div>
                 <div className='rightDetailsContainer'>
-                    <h2>{product.title}</h2>
-                    <p>
-                        <strong>About the house: </strong>
-                        {product.description}
-                    </p>
+                    <div className='rightTop'>
+                        <h2>{product.title}</h2>
+                        <p>
+                            <strong>About the house: </strong>
+                            {product.description}
+                        </p>
+                    </div>
                 </div>
                 </div>
         </div>
