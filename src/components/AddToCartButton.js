@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddToCartButton = () => {
     return (
-        <button>Add to cart</button>
+        <div className='addToCartButton'><button>Add to cart</button></div>
     );
 }
 
