@@ -7,8 +7,7 @@ const ProductDetails = ({ match }) => {
 
     useEffect(() => {
         getProduct();
-        console.log(match);
-    }, []);
+    });
 
     const getProduct = () => {
         const getProduct = products[match.params.id - 1];
