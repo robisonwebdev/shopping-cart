@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CheckoutButton = () => {
+const AddToCartButton = () => {
     return (
         <button>Add to cart</button>
     );
 }
 
-export default CheckoutButton;
+export default AddToCartButton;
