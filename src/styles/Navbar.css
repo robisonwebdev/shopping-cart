@@ -4,15 +4,15 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  background-color: #000;
-  color: #fff;
+  background-color: var(--blueBlack);
+  color: var(--white);
   min-height: 50px;
   width: 100%;
   padding: 0 20px;
 }
 
 .navLink {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
