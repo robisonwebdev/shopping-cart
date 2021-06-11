@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CartButton = () => {
+const CartButton = (props) => {
     return (
-        <div>Test</div>
+        <button>{props.text}</button>
     );
 }
 
