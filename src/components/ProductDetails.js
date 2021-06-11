@@ -24,7 +24,7 @@ const ProductDetails = ({ match }) => {
                 </div>
                 <div className='rightProductDetails'>
                     <div className='rightTop'>
-                        <div>
+                        <div className='rightTopDetails'>
                             <h2>{product.title}</h2>
                             <p>
                                 <strong>About the house: </strong>
