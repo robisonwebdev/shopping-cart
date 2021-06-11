@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/BackButton.css';
 
-const Button = (props) => {
+const BackButton = (props) => {
     return (
         <div className='backButton'>
             <Link to='/shop'><button>{props.text}</button></Link>
@@ -10,4 +10,4 @@ const Button = (props) => {
     );
 }
 
-export default Button;
+export default BackButton;
