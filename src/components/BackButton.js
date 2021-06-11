@@ -4,9 +4,7 @@ import '../styles/BackButton.css';
 
 const BackButton = (props) => {
     return (
-        <div className='backButton'>
-            <Link to='/shop'><button>{props.text}</button></Link>
-        </div>
+        <Link to='/shop'><button className='backButton'>{props.text}</button></Link>
     );
 }
 
