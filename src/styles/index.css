@@ -15,6 +15,10 @@ button {
 }
 
 #root {
+  --blueBlack: #132c33;
+  --darkBlue: #126e82;
+  --blue: #51c4d3;
+  --white: #d8e3e7;
   height: 100%;
   width: 100%;
 }
