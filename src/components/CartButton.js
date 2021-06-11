@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/CartButton.css';
 
 const CartButton = (props) => {
     return (
-        <button className='cartButton'>{props.text}</button>
+        <Link to='/cart'><button className='cartButton'>{props.text}</button></Link>
     );
 }
 
