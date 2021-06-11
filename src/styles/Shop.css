@@ -26,3 +26,12 @@
   height: 100%;
   width: 100%;
 }
+
+.products a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.products a:hover {
+  text-decoration: underline;
+}
