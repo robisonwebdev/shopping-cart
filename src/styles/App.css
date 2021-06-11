@@ -4,7 +4,9 @@
   align-items: center;
   justify-content: space-between;
 
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/leaves-pattern.png');
+  overflow-y: auto;
   height: 100%;
   width: 100%;
 }
