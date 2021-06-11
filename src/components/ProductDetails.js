@@ -3,6 +3,7 @@ import products from '../products/productsInformation.js';
 import BackButton from '../components/BackButton';
 import AddToCartButton from './AddToCartButton.js';
 import '../styles/ProductDetails.css';
+import CartButton from './CartButton.js';
 
 const ProductDetails = ({ match }) => {
     const [product, setProduct] = useState({});
@@ -34,6 +35,7 @@ const ProductDetails = ({ match }) => {
                         <AddToCartButton />
                     </div>
                     <div className='rightBottom'>
+                        <CartButton text='Proceed to cart' />
                         <BackButton text='Go Back' />
                     </div>
                 </div>
