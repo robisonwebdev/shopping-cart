@@ -3,7 +3,7 @@ import '../styles/CartButton.css';
 
 const CartButton = (props) => {
     return (
-        <button>{props.text}</button>
+        <button className='cartButton'>{props.text}</button>
     );
 }
 
