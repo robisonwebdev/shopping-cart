@@ -2,7 +2,11 @@ import React from 'react';
 
 const QuantityControl = () => {
     return (
-        <div className='quantityControl'></div>
+        <div className='quantityControl'>
+            <button></button>
+            <input type='number'></input>
+            <buttonm></buttonm>
+        </div>
     );
 }
 
