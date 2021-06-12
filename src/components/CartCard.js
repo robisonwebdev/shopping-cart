@@ -3,7 +3,10 @@ import React from 'react';
 const CartCard = () => {
     return (
         <div className='cartCard'>
-            <div className='cartCardDetails'></div>
+            <div className='cartCardProduct'>
+                <img className='cartCardImage' />
+                <div className='carCardDetails'></div>
+            </div>
             <div className='cartCardPrice'></div>
         </div>
     );
