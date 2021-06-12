@@ -3,9 +3,9 @@ import React from 'react';
 const QuantityControl = () => {
     return (
         <div className='quantityControl'>
-            <button></button>
+            <button>-</button>
             <input type='number'></input>
-            <buttonm></buttonm>
+            <button>+</button>
         </div>
     );
 }
