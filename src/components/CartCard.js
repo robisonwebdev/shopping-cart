@@ -1,4 +1,5 @@
 import React from 'react';
+import QuantityControl from './QuantityControl';
 
 const CartCard = () => {
     return (
@@ -8,6 +9,7 @@ const CartCard = () => {
                 <div className='cartCardDetails'>
                     <h3></h3>
                     <p></p>
+                    <QuantityControl />
                 </div>
             </div>
             <div className='cartCardPrice'></div>
