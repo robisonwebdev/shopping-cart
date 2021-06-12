@@ -3,11 +3,9 @@ import '../styles/QuantityControl.css';
 
 const QuantityControl = () => {
     return (
-        <div className='quantityControl'>
-            <button>-</button>
-            <input type='number'></input>
-            <button>+</button>
-        </div>
+        <form className='quantityControl'>
+
+        </form>
     );
 }
 
