@@ -5,7 +5,10 @@ const CartCard = () => {
         <div className='cartCard'>
             <div className='cartCardProduct'>
                 <img className='cartCardImage' />
-                <div className='carCardDetails'></div>
+                <div className='cartCardDetails'>
+                    <h3></h3>
+                    <p></p>
+                </div>
             </div>
             <div className='cartCardPrice'></div>
         </div>
