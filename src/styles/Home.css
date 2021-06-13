@@ -9,6 +9,10 @@
   width: 100%;
 }
 
+.home h1 {
+  font-size: 40px;
+}
+
 .home button {
   background-color: var(--black);
   border: 2px solid var(--black);
