@@ -1,15 +1,15 @@
 .backButton {
-  background-color: white;
-  border: 2px solid black;
+  background-color: var(--white);
+  border: 2px solid var(--black);
   border-radius: 5px;
-  color: black;
+  color: var(--black);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   padding: 3px 10px;
   transition: 0.3s;
 }
 
 .backButton:hover {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
