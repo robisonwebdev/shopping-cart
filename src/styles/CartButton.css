@@ -1,15 +1,15 @@
 .cartButton {
-  background-color: black;
-  border: 2px solid black;
+  background-color: var(--black);
+  border: 2px solid var(--black);
   border-radius: 5px;
-  color: white;
+  color: var(--white);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   padding: 3px 10px;
   transition: 0.3s;
 }
 
 .cartButton:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
