@@ -4,8 +4,10 @@ import BackButton from '../components/BackButton';
 import AddToCartButton from './AddToCartButton.js';
 import '../styles/ProductDetails.css';
 import CartButton from './CartButton.js';
+import { useParams } from 'react-router';
 
-const ProductDetails = ({ match }) => {
+const ProductDetails = () => {
+    const { id } = useParams();
     const [product, setProduct] = useState({});
 
     useEffect(() => {
@@ -13,7 +15,7 @@ const ProductDetails = ({ match }) => {
     });
 
     const getProduct = () => {
-        const getProduct = products[match.params.id - 1];
+        const getProduct = products[id - 1];
         setProduct(getProduct);
     }
 
