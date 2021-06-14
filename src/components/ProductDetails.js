@@ -6,7 +6,7 @@ import '../styles/ProductDetails.css';
 import CartButton from './CartButton.js';
 import { useParams } from 'react-router';
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
     const { id } = useParams();
     const [product, setProduct] = useState({});
 
@@ -34,7 +34,7 @@ const ProductDetails = () => {
                                 {product.description}
                             </p>
                         </div>
-                        <AddToCartButton />
+                        <AddToCartButton addItem={product} addToCart={props.addToCart} />
                     </div>
                     <div className='rightBottom'>
                         <CartButton text='Proceed to cart' />
