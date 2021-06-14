@@ -1,7 +1,7 @@
 import React from 'react';
 import CartCard from './CartCard';
 
-const Cart = () => {
+const Cart = (props) => {
     return (
         <div className='cart'>
             <CartCard />
