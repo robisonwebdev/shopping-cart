@@ -1,14 +1,14 @@
 import React from 'react';
 import QuantityControl from './QuantityControl';
 
-const CartCard = () => {
+const CartCard = (props) => {
     return (
         <div className='cartCard'>
             <div className='cartCardProduct'>
-                <img className='cartCardImage' />
+                <img className='cartCardImage' alt='' />
                 <div className='cartCardDetails'>
-                    <h3></h3>
-                    <p></p>
+                    <h3>{props.title}</h3>
+                    <p>{props.price}</p>
                     <QuantityControl />
                 </div>
             </div>
