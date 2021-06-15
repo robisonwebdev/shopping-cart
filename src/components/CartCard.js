@@ -5,15 +5,11 @@ import '../styles/CartCard.css';
 const CartCard = (props) => {
     return (
         <div className='cartCard'>
-            <div className='cartCardProduct'>
-                <img className='cartCardImage' src={props.image} alt='' />
-                <div className='cartCardDetails'>
-                    <h3>{props.title}</h3>
-                    <p>{props.price}</p>
-                    <QuantityControl />
-                </div>
-            </div>
-            <div className='cartCardPrice'></div>
+            <img className='cartCardImage' src={props.image} alt='' />
+            <h3 className='cartCardProduct'>{props.title}</h3>
+            <p className='cartCardPrice'>{props.price}</p>
+            <QuantityControl />
+            <p className='cartCardSubtotal'>Subtotal</p>
         </div>
     );
 }
