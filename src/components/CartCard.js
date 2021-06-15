@@ -14,7 +14,7 @@ const CartCard = (props) => {
             <img className='cartCardImage' src={image} alt='' />
             <h3 className='cartCardProduct'>{title}</h3>
             <p className='cartCardPrice'>{`$${price}`}</p>
-            <QuantityControl increase={props.increase} id={id} />
+            <QuantityControl increase={props.increase} decrease={props.decrease} id={id} />
             <p className='cartCardSubtotal'>{getSubtotal()}</p>
         </div>
     );
