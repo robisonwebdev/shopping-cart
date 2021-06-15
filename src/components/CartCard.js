@@ -3,7 +3,7 @@ import QuantityControl from './QuantityControl';
 import '../styles/CartCard.css';
 
 const CartCard = (props) => {
-    const { image, title, price, quantity } = props;
+    const { image, title, price, quantity, id } = props;
 
     function getSubtotal() {
         return quantity * price;
@@ -14,7 +14,7 @@ const CartCard = (props) => {
             <img className='cartCardImage' src={image} alt='' />
             <h3 className='cartCardProduct'>{title}</h3>
             <p className='cartCardPrice'>{`$${price}`}</p>
-            <QuantityControl />
+            <QuantityControl increase={props.increase} id={id} />
             <p className='cartCardSubtotal'>{getSubtotal()}</p>
         </div>
     );
