@@ -1,12 +1,16 @@
 import React from 'react';
 import '../styles/QuantityControl.css';
 
-const QuantityControl = () => {
+const QuantityControl = (props) => {
+    function onSubmit(e) {
+        e.preventDefault();
+    };
+
     return (
-        <form className='quantityControl'>
+        <form className='quantityControl' onSubmit={onSubmit}>
             <button>-</button>
             <input type='number' />
-            <button>+</button>
+            <button onClick={() => props.increase(props.id)}>+</button>
         </form>
     );
 }
