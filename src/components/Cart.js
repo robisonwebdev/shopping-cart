@@ -3,10 +3,7 @@ import CartCard from './CartCard';
 
 const Cart = (props) => {
     const buildCart = () => {
-        const { image, price, title, quantity } = props.cartItems[1];
-
-        return <CartCard title={title} price={price} image={image} quantity={quantity} />
-        // return console.log(props.cartItems[1]);
+        return <CartCard {...props.cartItems[1]} increase={props.increase} decrease={props.decrease} />
     }
 
     return (
