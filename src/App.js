@@ -26,6 +26,17 @@ const App = () => {
     setCart(updateCart);
   }
 
+  function decreaseProductQuantity(id) {
+    let updateCart = cart.map(product => {
+      if (product.id === id) {
+        return {...product, quantity: product['quantity'] - 1};
+      }
+      return product;
+    });
+
+    setCart(updateCart);
+  }
+
   return (
     <Router>
       <div className='App'>
