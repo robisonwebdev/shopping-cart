@@ -15,7 +15,7 @@ const App = () => {
     console.log(cart);
   }, [cart]);
 
-  function updateProductQuantity(id) {
+  function increaseProductQuantity(id) {
     let updateCart = cart.map(product => {
       if (product.id === id) {
         return {...product, quantity: product['quantity'] + 1};
@@ -41,7 +41,7 @@ const App = () => {
             <Cart cartItems={cart}/>
           </Route>
           <Route exact path='/shop/:id'>
-            <ProductDetails addToCart={updateProductQuantity} />
+            <ProductDetails addToCart={increaseProductQuantity} />
           </Route>
         </Switch>
       </div>
