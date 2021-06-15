@@ -7,9 +7,9 @@ const CartCard = (props) => {
         <div className='cartCard'>
             <img className='cartCardImage' src={props.image} alt='' />
             <h3 className='cartCardProduct'>{props.title}</h3>
-            <p className='cartCardPrice'>{props.price}</p>
+            <p className='cartCardPrice'>{`$${props.price}`}</p>
             <QuantityControl />
-            <p className='cartCardSubtotal'>Subtotal</p>
+            <p className='cartCardSubtotal'>{`$${(props.quantity)*(props.price)}`}</p>
         </div>
     );
 }
