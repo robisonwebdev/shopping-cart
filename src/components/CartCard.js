@@ -6,7 +6,7 @@ const CartCard = (props) => {
     const { image, title, price, quantity, id } = props;
 
     function getSubtotal() {
-        return quantity * price;
+        return (quantity * price).toFixed(2);
     }
 
     return (
@@ -15,7 +15,7 @@ const CartCard = (props) => {
             <h3 className='cartCardProduct'>{title}</h3>
             <p className='cartCardPrice'>{`$${price}`}</p>
             <QuantityControl increase={props.increase} decrease={props.decrease} id={id} />
-            <p className='cartCardSubtotal'>{getSubtotal()}</p>
+            <p className='cartCardSubtotal'>{`$${getSubtotal()}`}</p>
         </div>
     );
 }
