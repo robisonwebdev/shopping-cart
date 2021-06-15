@@ -49,7 +49,7 @@ const App = () => {
             <Shop />
           </Route>
           <Route exact path='/cart'>
-            <Cart cartItems={cart} increase={increaseProductQuantity}/>
+            <Cart cartItems={cart} increase={increaseProductQuantity} decrease={decreaseProductQuantity}/>
           </Route>
           <Route exact path='/shop/:id'>
             <ProductDetails addToCart={increaseProductQuantity} />
