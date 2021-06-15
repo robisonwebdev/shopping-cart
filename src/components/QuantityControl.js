@@ -9,7 +9,7 @@ const QuantityControl = (props) => {
     return (
         <form className='quantityControl' onSubmit={onSubmit}>
             <button onClick={() => props.decrease(props.id)}>-</button>
-            <input type='number' />
+            <input type='number' value={props.quantity} />
             <button onClick={() => props.increase(props.id)}>+</button>
         </form>
     );
