@@ -26,10 +26,10 @@ const App = () => {
     setCart(updateCart);
   }
 
-  function decreaseProductQuantity(id) {
+  function productQuantityChange(id, value) {
     let updateCart = cart.map(product => {
       if (product.id === id) {
-        return {...product, quantity: product['quantity'] - 1};
+        return {...product, quantity: value};
       }
       return product;
     });
@@ -49,7 +49,7 @@ const App = () => {
             <Shop />
           </Route>
           <Route exact path='/cart'>
-            <Cart cartItems={cart} increase={increaseProductQuantity} decrease={decreaseProductQuantity}/>
+            <Cart cartItems={cart} quantityChange={productQuantityChange}/>
           </Route>
           <Route exact path='/shop/:id'>
             <ProductDetails addToCart={increaseProductQuantity} />
