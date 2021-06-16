@@ -1,5 +1,6 @@
 import React from 'react';
 import CartCard from './CartCard';
+import '../styles/Cart.css';
 
 const Cart = (props) => {
     const buildCart = () => {
@@ -19,8 +20,10 @@ const Cart = (props) => {
                         <th></th>
                     </tr>
                 </thead>
+                <tbody>
+                    {buildCart()}
+                </tbody>
             </table>
-            {buildCart()}
         </div>
     );
 }
