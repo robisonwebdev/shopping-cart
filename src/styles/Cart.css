@@ -3,8 +3,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 
   height: 100%;
   width: 100%;
+}
+
+.cartTable {
+  border-spacing: 0;
+  padding: 10px 20px;
+  text-align: center;
+  width: 60%;
+}
+
+.cartTable thead tr th,
+.cartCard td {
+  border-bottom: 1px solid black;
+}
+
+.cartCard td {
+  padding-top: 10px;
 }
