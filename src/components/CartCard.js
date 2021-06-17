@@ -10,13 +10,13 @@ const CartCard = (props) => {
     }
 
     return (
-        <div className='cartCard'>
-            <img className='cartCardImage' src={image} alt='' />
-            <h3 className='cartCardProduct'>{title}</h3>
-            <p className='cartCardPrice'>{`$${price}`}</p>
-            <QuantityControl increase={props.increase} decrease={props.decrease} id={id} quantity={quantity} />
-            <p className='cartCardSubtotal'>{`$${getSubtotal()}`}</p>
-        </div>
+        <tr className='cartCard'>
+            <td><img className='cartCardImage' src={image} alt='' /></td>
+            <td><h3 className='cartCardProduct'>{title}</h3></td>
+            <td><p className='cartCardPrice'>{`$${price}`}</p></td>
+            <td><QuantityControl id={id} quantity={quantity} quantityChange={props.quantityChange} /></td>
+            <td><p className='cartCardSubtotal'>{`$${getSubtotal()}`}</p></td>
+        </tr>
     );
 }
 
