@@ -15,17 +15,6 @@ const App = () => {
     console.log(cart);
   }, [cart]);
 
-  function increaseProductQuantity(id) {
-    let updateCart = cart.map(product => {
-      if (product.id === id) {
-        return {...product, quantity: product['quantity'] + 1};
-      }
-      return product;
-    });
-
-    setCart(updateCart);
-  }
-
   function addToCart(id) {
     Products.map(product => {
       if (product.id === id) {
