@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CartCard from './CartCard';
 import '../styles/Cart.css';
 
 const Cart = (props) => {
-    const buildCart = () => {
-        return <CartCard {...props.cartItems[1]} increase={props.increase} decrease={props.decrease} quantityChange={props.quantityChange} />
-    }
+    const { cartItems } = props;
 
     return (
         <div className='cart'>
-            <table>
+            <table className='cartTable'>
                 <thead>
                     <tr>
                         <th></th>
@@ -21,7 +19,11 @@ const Cart = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {buildCart()}
+                    {cartItems.map((item) => {
+                        if (item['quantity'] > 0) {
+                            return <CartCard {...item} quantityChange={props.quantityChange} />
+                        }
+                    })}
                 </tbody>
             </table>
         </div>
