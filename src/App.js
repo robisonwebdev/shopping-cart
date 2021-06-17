@@ -9,7 +9,7 @@ import Products from './products/productsInformation';
 import './styles/App.css';
 
 const App = () => {
-  const [cart, setCart] = useState(Products);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     console.log(cart);
@@ -24,6 +24,18 @@ const App = () => {
     });
 
     setCart(updateCart);
+  }
+
+  function addToCart(id) {
+    Products.map(product => {
+      if (product.id === id) {
+        product['quantity'] = 1;
+
+        setCart(prevState => {
+          return [...prevState, product];
+        });
+      }
+    })
   }
 
   function productQuantityChange(id, value) {
@@ -52,7 +64,7 @@ const App = () => {
             <Cart cartItems={cart} quantityChange={productQuantityChange}/>
           </Route>
           <Route exact path='/shop/:id'>
-            <ProductDetails addToCart={increaseProductQuantity} />
+            <ProductDetails addToCart={addToCart} />
           </Route>
         </Switch>
       </div>
