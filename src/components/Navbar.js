@@ -10,7 +10,7 @@ const Navbar = (props) => {
             <ul id='navLinks'>
                 <Link className='navLink' to='/'><li>Home</li></Link>
                 <Link className='navLink' to='/shop'><li>Shop</li></Link>
-                <Link className='navLink' to='/cart'><li>Cart ( {cartQuantity} )</li></Link>
+                <Link className='navLink' to='/cart'><li>Cart {cartQuantity !== 0 ? `( ${cartQuantity} )` : null}</li></Link>
             </ul>
         </nav>
     );
