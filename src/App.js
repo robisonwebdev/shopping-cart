@@ -12,6 +12,13 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
+    cart.map(product => {
+      if (product.quantity === 0) {
+        let filterCart = cart.filter(product => product.quantity > 0);
+        setCart(filterCart);
+      }
+    })
+
     console.log(cart);
   }, [cart]);
 
