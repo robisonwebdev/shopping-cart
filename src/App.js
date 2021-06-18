@@ -18,11 +18,22 @@ const App = () => {
   function addToCart(id) {
     Products.map(product => {
       if (product.id === id) {
-        product['quantity'] = 1;
+        if (cart.some(item => item.id === id)) {
+          let updateProduct = cart.map(item => {
+            if (item.id === id) {
+              return {...item, ['quantity']: item['quantity'] + 1};
+            }
+            return item;
+          });
 
-        setCart(prevState => {
-          return [...prevState, product];
-        });
+          setCart(updateProduct);
+        } else {
+          product['quantity'] = 1;
+
+          setCart(prevState => {
+            return [...prevState, product];
+          });
+        }
       }
     })
   }
