@@ -55,11 +55,11 @@ const App = () => {
 
     setCart(updateCart);
   }
-
+  
   return (
     <Router>
       <div className='App'>
-        <Navbar />
+        <Navbar cartQuantity={cart.length} />
         <Switch>
           <Route exact path='/'>
             <Home />
