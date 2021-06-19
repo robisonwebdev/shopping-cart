@@ -35,7 +35,7 @@ const App = () => {
 
           setCart(updateProduct);
         } else {
-          product['quantity'] = 1;
+          product.quantity = 1;
 
           setCart(prevState => {
             return [...prevState, product];
