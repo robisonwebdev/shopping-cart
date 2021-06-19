@@ -3,9 +3,10 @@ import '../styles/QuantityControl.css';
 
 const QuantityControl = (props) => {
     const [inputValue, setInputValue] = useState(props.quantity);
+    const { quantityChange } = props;
 
     useEffect(() => {
-        props.quantityChange(props.id, inputValue);
+        quantityChange(props.id, inputValue);
     }, [inputValue])
 
     function onSubmit(e) {
