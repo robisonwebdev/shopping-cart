@@ -22,7 +22,7 @@ const Cart = (props) => {
                 <tbody>
                     {cartItems.map((item) => {
                         if (item['quantity'] > 0) {
-                            return <CartCard {...item} quantityChange={props.quantityChange} />
+                            return <CartCard {...item} key={item.id} quantityChange={props.quantityChange} />
                         }
                     })}
                 </tbody>
