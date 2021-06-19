@@ -12,7 +12,7 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    cart.map(product => {
+    cart.forEach(product => {
       if (product.quantity === 0) {
         let filterCart = cart.filter(product => product.quantity > 0);
         setCart(filterCart);
@@ -23,12 +23,12 @@ const App = () => {
   }, [cart]);
 
   function addToCart(id) {
-    Products.map(product => {
+    Products.forEach(product => {
       if (product.id === id) {
         if (cart.some(item => item.id === id)) {
           let updateProduct = cart.map(item => {
             if (item.id === id) {
-              return {...item, ['quantity']: item['quantity'] + 1};
+              return {...item, quantity: item.quantity + 1};
             }
             return item;
           });
