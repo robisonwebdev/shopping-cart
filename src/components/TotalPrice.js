@@ -14,12 +14,12 @@ const TotalPrice = (props) => {
             total += subtotal;
         });
 
-        return total;
+        return total.toFixed(2);
     }
 
     return (
         <div className='totalPrice'>
-            <h3>{`Total: ${getTotal()}`}</h3>
+            <h3>{`Total: $${getTotal()}`}</h3>
         </div>
     );
 }
