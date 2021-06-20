@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Subtotal = () => {
+const TotalPrice = () => {
     return (
-        <div>Subtotal</div>
+        <div>TotalPrice</div>
     );
 }
 
-export default Subtotal;
+export default TotalPrice;
