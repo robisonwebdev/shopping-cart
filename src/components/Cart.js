@@ -23,7 +23,7 @@ const Cart = (props) => {
                     {cartItems.map((item) => {
                         if (item['quantity'] > 0) {
                             return <CartCard {...item} key={item.id} quantityChange={props.quantityChange} />
-                        }
+                        } else return null;
                     })}
                 </tbody>
             </table>
