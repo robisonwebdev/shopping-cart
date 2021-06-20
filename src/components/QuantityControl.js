@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import '../styles/QuantityControl.css';
 
 const QuantityControl = (props) => {
-    const [inputValue, setInputValue] = useState(props.quantity);
-    const { quantityChange } = props;
+    const { quantity, quantityChange, id } = props;
+    const [inputValue, setInputValue] = useState(quantity);
 
     useEffect(() => {
-        quantityChange(props.id, inputValue);
-    }, [inputValue])
+        quantityChange(id, inputValue);
+    }, [inputValue, id])
 
     function onSubmit(e) {
         e.preventDefault();
