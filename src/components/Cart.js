@@ -28,7 +28,7 @@ const Cart = (props) => {
                     })}
                 </tbody>
             </table>
-            <TotalPrice />
+            <TotalPrice cartItems={cartItems} />
         </div>
     );
 }
