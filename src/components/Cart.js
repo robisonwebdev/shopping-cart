@@ -1,6 +1,7 @@
 import React from 'react';
 import CartCard from './CartCard';
 import '../styles/Cart.css';
+import TotalPrice from './TotalPrice';
 
 const Cart = (props) => {
     const { cartItems } = props;
@@ -27,6 +28,7 @@ const Cart = (props) => {
                     })}
                 </tbody>
             </table>
+            <TotalPrice />
         </div>
     );
 }
