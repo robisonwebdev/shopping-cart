@@ -1,8 +1,11 @@
 import React from 'react';
 
-const TotalPrice = () => {
+const TotalPrice = (props) => {
+    const { price } = props;
     return (
-        <div>TotalPrice</div>
+        <div className='TotalPrice'>
+            <h3>{`Total: ${price}`}</h3>
+        </div>
     );
 }
 
