@@ -1,0 +1,15 @@
+.checkoutButton {
+    background-color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 6px 30px;
+    transition: 0.3s;
+  }
+  
+  .checkoutButton:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
