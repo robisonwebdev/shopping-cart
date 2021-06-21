@@ -3,7 +3,7 @@ import '../styles/CheckoutButton.css';
 
 const CheckoutButton = () => {
     return (
-        <button>Checkout</button>
+        <button className='checkoutButton'>Checkout</button>
     );
 }
 
