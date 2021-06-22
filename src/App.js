@@ -61,16 +61,16 @@ const App = () => {
       <div className='App'>
         <Navbar cartQuantity={cart.length} />
         <Switch>
-          <Route exact path='/shopping-cart/'>
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/shopping-cart/shop'>
+          <Route exact path='/shop'>
             <Shop />
           </Route>
-          <Route exact path='/shopping-cart/cart'>
+          <Route exact path='/cart'>
             <Cart cartItems={cart} quantityChange={productQuantityChange} />
           </Route>
-          <Route exact path='/shopping-cart/shop/:id'>
+          <Route exact path='/shop/:id'>
             <ProductDetails addToCart={addToCart} />
           </Route>
         </Switch>
