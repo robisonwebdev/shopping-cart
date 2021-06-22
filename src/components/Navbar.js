@@ -6,7 +6,7 @@ const Navbar = (props) => {
     const { cartQuantity } = props;
     return (
         <nav>
-            <Link className='navLink' to='/'><h3 >Birdie's Bird Houses</h3></Link>
+            <Link className='navLink siteNavTitle' to='/'><h3 >Birdie's Bird Houses</h3></Link>
             <ul id='navLinks'>
                 <Link className='navLink' to='/'><li>Home</li></Link>
                 <Link className='navLink' to='/shop'><li>Shop</li></Link>
