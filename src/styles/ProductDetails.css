@@ -63,3 +63,21 @@
 
   width: 100%;
 }
+
+@media only screen and (max-width: 960px) {
+  .productContainer {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .productContainer {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .productContainer {
+    width: 380px;
+  }
+}
