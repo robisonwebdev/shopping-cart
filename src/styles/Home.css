@@ -20,28 +20,8 @@
   max-width: 500px;
 }
 
-.home button {
-  background-color: var(--black);
-  border: 2px solid var(--black);
-  border-radius: 5px;
-  color: var(--white);
-  cursor: pointer;
-  font-size: 26px;
-  padding: 3px 10px;
-  transition: 0.3s;
-}
-
-.home button:hover {
-  background-color: var(--white);
-  color: var(--black);
-}
-
 @media only screen and (max-width: 485px) {
   .home h1 {
     font-size: 30px;
-  }
-
-  .home button {
-    font-size: 22px;
   }
 }
