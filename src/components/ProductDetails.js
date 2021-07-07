@@ -3,7 +3,6 @@ import products from '../products/productsInformation.js';
 import Button from '../components/Button';
 import AddToCartButton from './AddToCartButton.js';
 import '../styles/ProductDetails.css';
-import CartButton from './CartButton.js';
 import { useParams } from 'react-router';
 
 const ProductDetails = (props) => {
