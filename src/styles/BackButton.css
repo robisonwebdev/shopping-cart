@@ -1,4 +1,4 @@
-.Button {
+.backButton {
   background-color: var(--white);
   border: 2px solid var(--black);
   border-radius: 5px;
@@ -9,13 +9,13 @@
   transition: 0.3s;
 }
 
-.Button:hover {
+.backButton:hover {
   background-color: var(--black);
   color: var(--white);
 }
 
 @media only screen and (max-width: 760px) {
-  .Button {
+  .backButton {
     font-size: 13px;
     padding: 2px 8px;
   }
