@@ -30,6 +30,22 @@
   color: var(--black);
 }
 
+.viewProducts {
+  background-color: var(--black);
+  border: 2px solid var(--black);
+  border-radius: 5px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 26px;
+  padding: 3px 10px;
+  transition: 0.3s;
+}
+
+.viewProducts:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 @media only screen and (max-width: 760px) {
   .backButton {
     font-size: 13px;
@@ -39,5 +55,11 @@
   .cartButton {
     font-size: 13px;
     padding: 2px 8px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .viewProducts {
+    font-size: 22px;
   }
 }
