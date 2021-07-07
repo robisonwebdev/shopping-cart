@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from './Button';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
         <div className='home'>
             <h1>Birdie's Bird Houses</h1>
             <p>Magna ea irure officia aliquip tempor amet pariatur occaecat nostrud proident qui magna.</p>
-            <Link to='/shop'><button>View Products</button></Link>
+            <Button text='View Products' link='/shop' className='viewProducts' />
         </div>
     );
 }
