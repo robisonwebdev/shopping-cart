@@ -37,7 +37,7 @@ const ProductDetails = (props) => {
                     </div>
                     <div className='rightBottom'>
                         <Button text='Proceed to cart' link='/cart' className='cartButton' />
-                        <Button text='Go Back' link='/shop' className='Button' />
+                        <Button text='Go Back' link='/shop' className='backButton' />
                     </div>
                 </div>
             </div>
