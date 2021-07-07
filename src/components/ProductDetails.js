@@ -37,8 +37,8 @@ const ProductDetails = (props) => {
                         <AddToCartButton addItem={product} addToCart={props.addToCart} />
                     </div>
                     <div className='rightBottom'>
-                        <CartButton text='Proceed to cart' />
-                        <Button text='Go Back' link='/shop' />
+                        <Button text='Proceed to cart' link='/cart' className='cartButton' />
+                        <Button text='Go Back' link='/shop' className='Button' />
                     </div>
                 </div>
             </div>
