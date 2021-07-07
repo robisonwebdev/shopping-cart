@@ -1,8 +1,6 @@
 import React from 'react';
 
-const TotalPrice = (props) => {
-    const { cartItems } = props;
-
+const TotalPrice = ({ cartItems }) => {
     function getTotal() {
         let total = 0;
 
