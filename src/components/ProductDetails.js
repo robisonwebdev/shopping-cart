@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import products from '../products/productsInformation.js';
-import BackButton from '../components/BackButton';
+import Button from '../components/Button';
 import AddToCartButton from './AddToCartButton.js';
 import '../styles/ProductDetails.css';
 import CartButton from './CartButton.js';
@@ -38,7 +38,7 @@ const ProductDetails = (props) => {
                     </div>
                     <div className='rightBottom'>
                         <CartButton text='Proceed to cart' />
-                        <BackButton text='Go Back' />
+                        <Button text='Go Back' link='/shop' />
                     </div>
                 </div>
             </div>
