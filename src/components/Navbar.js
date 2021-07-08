@@ -2,8 +2,7 @@ import React from 'react';
 import '../styles/Navbar.css';
 import { Link } from 'react-router-dom';
 
-const Navbar = (props) => {
-    const { cartQuantity } = props;
+const Navbar = ({ cartQuantity }) => {
     return (
         <nav>
             <Link className='navLink siteNavTitle' to='/'><h3 >Birdie's Bird Houses</h3></Link>
