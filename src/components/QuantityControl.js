@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/QuantityControl.css';
 
-const QuantityControl = (props) => {
-    const { quantity, quantityChange, id } = props;
+const QuantityControl = ({ quantity, quantityChange, id }) => {
     const [inputValue, setInputValue] = useState(quantity);
 
     useEffect(() => {
