@@ -5,10 +5,6 @@ function checkoutAlert() {
     alert('Thanks for trying my mockup shopping site.');
 }
 
-const CheckoutButton = () => {
-    return (
-        <button className='checkoutButton' onClick={() => {checkoutAlert()}}>Checkout</button>
-    );
-}
+const CheckoutButton = () => <button className='checkoutButton' onClick={() => {checkoutAlert()}}>Checkout</button>
 
 export default CheckoutButton;
