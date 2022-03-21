@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <div className='nav_title'>
+                <ul className='nav_title'>
                     <NavLink linkTo={'#'} title={`Birdie's Bird Houses`} />
-                </div>
+                </ul>
                 <ul className='nav_links'>
                     <NavLink linkTo={'#'} title='Home' />
                     <NavLink linkTo={'#'} title='Shop' />
