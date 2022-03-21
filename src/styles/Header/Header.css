@@ -10,3 +10,7 @@ nav {
 
     padding: 0 20px;
 }
+
+.nav_title, .nav_links {
+    list-style-type: none;
+}
