@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLink from './NavLink';
+import '../../styles/Header/Header.css';
 
 const Header = () => {
     return (
