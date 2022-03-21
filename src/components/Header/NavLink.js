@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../styles/Header/NavLink.css';
 
 const NavLink = ({ linkTo, title  }) => {
     return (
