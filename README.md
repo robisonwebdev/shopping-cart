@@ -1,6 +1,14 @@
 # Shopping Cart - [Live Preview](https://robisonwebdev.github.io/shopping-cart/)
 
-## Objective
+## Version 2 Objectives
+- Update to current React Router
+- Fix spacing in mobile view.
+- Reorganize components structure.
+- Refactor components with current knowledge.
+- Refactor code structure.
+- Fixed background pattern from not showning.
+
+## Version 1 Objective
 My objective for creating a Shopping Cart with react was to learn how to use Router. Router allowed me move from creating single page applications, to multiple page applications. With Router I was able to setup a navigation using HashRouter, Switch, Route, and Link.
 
 ## Version 1 - 05/23/2021
