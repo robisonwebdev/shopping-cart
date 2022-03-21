@@ -5,7 +5,7 @@ import '../../styles/Header/NavLink.css';
 const NavLink = ({ linkTo, title  }) => {
     return (
         <Link to={linkTo}>
-            <li>{title}</li>
+            <li className='nav_link'>{title}</li>
         </Link>
     );
 };
