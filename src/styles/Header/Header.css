@@ -8,6 +8,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
+    background-color: var(--blueBlack);
     padding: 10px 20px;
 }
 
@@ -26,4 +27,5 @@ nav {
 
 .nav_title {
     font-size: 18px;
+    font-weight: bold;
 }
