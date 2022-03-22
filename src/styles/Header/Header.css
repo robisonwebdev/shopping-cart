@@ -29,3 +29,13 @@ nav {
     font-size: 18px;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 485px) {
+    .nav_title {
+      display: none;
+    }
+  
+    nav {
+        justify-content: center;
+    }
+}
