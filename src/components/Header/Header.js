@@ -7,12 +7,12 @@ const Header = () => {
         <header>
             <nav>
                 <ul className='nav_title'>
-                    <NavLink linkTo={'#'} title={`Birdie's Bird Houses`} />
+                    <NavLink linkTo={'/'} title={`Birdie's Bird Houses`} />
                 </ul>
                 <ul className='nav_links'>
-                    <NavLink linkTo={'#'} title='Home' />
-                    <NavLink linkTo={'#'} title='Shop' />
-                    <NavLink linkTo={'#'} title='Cart' />
+                    <NavLink linkTo={'/'} title='Home' />
+                    <NavLink linkTo={'/shop'} title='Shop' />
+                    <NavLink linkTo={'/cart'} title='Cart' />
                 </ul>
             </nav>
         </header>
