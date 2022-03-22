@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Cart from './Cart';
+import Error from './Error';
 import Shop from './Shop';
 import Welcome from './Welcome';
 
@@ -18,6 +19,8 @@ const Main = () => {
             <Route path='/shop' element={<Layout />}>
                 <Route index element={<Shop />} />
             </Route>
+
+            <Route path='*' element={<Error />} />
         </Routes>
     );
 };
