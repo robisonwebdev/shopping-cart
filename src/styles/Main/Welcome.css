@@ -9,3 +9,11 @@
     height: 100%;
     width: 100%;
 }
+
+.welcome h1 {
+    font-size: 2rem;
+}
+
+.welcome p {
+    text-align: center;
+}
