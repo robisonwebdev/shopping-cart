@@ -1,5 +1,5 @@
 .button {
-    color: black;
+    color: #000;
 }
 
 .welcome_button {
@@ -8,12 +8,12 @@
     border-radius: 5px;
     color: var(--white);
     cursor: pointer;
-    font-size: 26px;
+    font-size: 1.3rem;
     padding: 3px 10px;
     transition: 0.3s;
 }
 
 .welcome_button:hover {
     background-color: var(--white);
-    color: var(--black);
+    color: var(--blueBlack);
 }
