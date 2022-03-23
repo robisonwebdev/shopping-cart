@@ -1,41 +1,19 @@
 import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
+import Cart from './Cart';
+import Error from './Error';
+import Shop from './Shop'
 import Welcome from './Welcome';
-
-const Cart = React.lazy(() => import('./Cart'));
-const Error = React.lazy(() => import('./Error'));
-const Shop = React.lazy(() => import('./Shop'));
 
 const Main = () => {
     return (
         <Routes>
-            <Route path='/' element={<Layout />}>
-                <Route index element={<Welcome />} />
-                <Route 
-                    path='cart'
-                    element={
-                        <React.Suspense fallback={<>...</>}>
-                            <Cart />
-                        </React.Suspense>
-                    }
-                />
-                <Route 
-                    path='shop'
-                    element={
-                        <React.Suspense fallback={<>...</>}>
-                            <Shop />
-                        </React.Suspense>
-                    }
-                />
-                <Route 
-                    path='*'
-                    element={
-                        <React.Suspense fallback={<>...</>}>
-                            <Error />
-                        </React.Suspense>
-                    }
-                />
-            </Route>            
+            <Route path={'/'} element={<Layout />}>
+                <Route index element={<Welcome />} />             
+                <Route path='cart' element={<Cart />} />
+                <Route path='shop' element={<Shop />} />
+                <Route path='*' element={<Error />} />
+            </Route>          
         </Routes>
     );
 };
