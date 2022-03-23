@@ -4,7 +4,7 @@ import '../../styles/Main/Button.css';
 
 const Button = ({ className, linkTo, text }) => {
     return (
-        <Link to={linkTo}>
+        <Link className='button' to={linkTo}>
             <button className={className}>{text}</button>
         </Link>
     );
