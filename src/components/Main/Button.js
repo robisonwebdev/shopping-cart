@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import '../styles/Buttons.css';
+import '../../styles/Main/Button.css';
 
 const Button = ({ className, linkTo, text }) => {
     return (
