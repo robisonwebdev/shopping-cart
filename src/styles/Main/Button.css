@@ -1,0 +1,19 @@
+.button {
+    color: black;
+}
+
+.welcome_button {
+    background-color: var(--blueBlack);
+    border: 2px solid var(--blueBlack);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 26px;
+    padding: 3px 10px;
+    transition: 0.3s;
+}
+
+.welcome_button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
