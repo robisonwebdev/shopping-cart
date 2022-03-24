@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
-import '../../styles/Main/Welcome.css';
+import Button from '../Button';
+import '../../../styles/Main/Welcome.css';
 
 const Welcome = () => {
     return (
