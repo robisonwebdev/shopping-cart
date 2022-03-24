@@ -4,6 +4,7 @@ import Cart from './Cart/Cart';
 import Error from './Error/Error';
 import Shop from './Shop/Shop';
 import Welcome from './Welcome/Welcome';
+import '../../styles/Main/Main.css';
 
 const Main = () => {
     return (
