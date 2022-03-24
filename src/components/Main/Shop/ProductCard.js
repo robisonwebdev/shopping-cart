@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../../styles/Main/Shop/ProductCard.css';
 
-const ProductCard = ({ image, price, title }) => {
+const ProductCard = ({ product }) => {
+    const { image, price, title } = product;
+
     return (
         <section className='product_card'>
             <img className='product_image' src={image} alt={title} />
