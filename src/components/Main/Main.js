@@ -3,7 +3,7 @@ import { Routes, Route, Outlet } from 'react-router-dom';
 import Cart from './Cart/Cart';
 import Error from './Error';
 import Shop from './Shop/Shop';
-import Welcome from './Welcome';
+import Welcome from './Welcome/Welcome';
 
 const Main = () => {
     return (
