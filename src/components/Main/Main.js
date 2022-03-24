@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
-import Cart from './Cart';
+import Cart from './Cart/Cart';
 import Error from './Error';
 import Shop from './Shop/Shop';
 import Welcome from './Welcome';
