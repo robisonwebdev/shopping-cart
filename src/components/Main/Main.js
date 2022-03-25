@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Cart from './Cart/Cart';
 import Error from './Error/Error';
+import ProductInformation from './Shop/ProductInformation';
 import Shop from './Shop/Shop';
 import Welcome from './Welcome/Welcome';
 import '../../styles/Main/Main.css';
@@ -14,7 +15,11 @@ const Main = () => {
                 <Route path='cart' element={<Cart />} />
                 <Route path='shop' element={<Shop />} />
                 <Route path='*' element={<Error />} />
-            </Route>          
+            </Route>
+
+            <Route path='/shop' element={<Layout />}>
+                <Route path=':id' element={<ProductInformation />} />    
+            </Route>  
         </Routes>
     );
 };
