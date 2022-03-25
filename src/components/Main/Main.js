@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Outlet } from 'react-router-dom';
 import Cart from './Cart/Cart';
 import Error from './Error/Error';
-import ProductInformation from './Shop/ProductInformation';
+import Product from './Product/Product'
 import Shop from './Shop/Shop';
 import Welcome from './Welcome/Welcome';
 import '../../styles/Main/Main.css';
@@ -18,7 +18,7 @@ const Main = () => {
             </Route>
 
             <Route path='/shop' element={<Layout />}>
-                <Route path=':id' element={<ProductInformation />} />    
+                <Route path=':id' element={<Product />} />    
             </Route>  
         </Routes>
     );
