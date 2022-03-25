@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProductInformation = () => {
+const Product = () => {
     return (
-        <section>ProductInformation</section>
+        <section className='product'>Product</section>
     );
 };
 
-export default ProductInformation;
+export default Product;
