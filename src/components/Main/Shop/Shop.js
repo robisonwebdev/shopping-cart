@@ -1,11 +1,11 @@
 import React from 'react';
 import products from '../../../products/productsInformation';
-import ProductCard from './ProductCard';
+import ShopCard from './ShopCard';
 import '../../../styles/Main/Shop/Shop.css';
 
 const Shop = () => {
     const mapProducts = products.map(product => {
-        return <ProductCard key={product.id} product={product} />
+        return <ShopCard key={product.id} product={product} />
     });
 
     return (
