@@ -1,4 +1,4 @@
-.product_card {
+.shop_card_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,18 +7,18 @@
   max-width: 100%;
 }
 
-.product_card a {
+.shop_card_card a {
   color: #000;
   text-decoration: none;
 }
 
-.product_image {
+.shop_card_image {
   width: 300px;
   height: 330px;
   object-fit: cover;
 }
 
-.product_information {
+.shop_card_information {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,7 +28,7 @@
 }
 
 @media only screen and (min-width: 485px) {
-  .product_image {
+  .shop_card_image {
     width: 400px;
     height: 430px;
   }
