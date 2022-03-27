@@ -23,7 +23,10 @@ const Product = () => {
                 <img src={product.image} alt={product.title} />
             </section>
             <section className='product_information'>
-                <section className='product_information_top'></section>
+                <section className='product_information_top'>
+                    <h2>{product.title}</h2>
+                    <p>{product.description}</p>
+                </section>
                 <section className='product_inforation_bottom'></section>
             </section>
         </section>
