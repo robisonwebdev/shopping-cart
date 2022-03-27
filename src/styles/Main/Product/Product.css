@@ -32,3 +32,13 @@
     height: 100%;
     width: 100%;
 }
+
+.product_information_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    height: 100%;
+    width: 100%;
+}
