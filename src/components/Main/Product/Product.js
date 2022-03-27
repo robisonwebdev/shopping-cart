@@ -35,7 +35,7 @@ const Product = () => {
                     </div>
                     <AddToCartButton />
                 </section>
-                <section className='product_inforation_bottom'>
+                <section className='product_information_bottom'>
                     <Button className='proceed_to_cart_button' linkTo='/cart' text='Proceed To Cart' />
                     <Button className='go_back_button' linkTo='/shop' text='Go Back' />
                 </section>
