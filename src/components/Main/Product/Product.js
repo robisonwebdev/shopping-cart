@@ -20,8 +20,7 @@ const Product = () => {
     return (
         <section className='product'>
             <section className='product_image'>
-                {console.log(product)}
-                <img />
+                <img src={product.image} alt={product.title} />
             </section>
             <section className='product_information'>
                 <section className='product_information_top'></section>
