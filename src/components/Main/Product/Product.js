@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import '../../../styles/Main/Product/Product.css';
 
 const Product = () => {
     return (
