@@ -36,8 +36,8 @@ const Product = () => {
                     <AddToCartButton />
                 </section>
                 <section className='product_inforation_bottom'>
-                    <Button className='proceed_to_cart' linkTo='/cart' text='Proceed To Cart' />
-                    <Button className='go_back' linkTo='/shop' text='Go Back' />
+                    <Button className='proceed_to_cart_button' linkTo='/cart' text='Proceed To Cart' />
+                    <Button className='go_back_button' linkTo='/shop' text='Go Back' />
                 </section>
             </section>
         </section>
