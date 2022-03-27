@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import AddToCartButton from './AddToCartButton';
 import products from '../../../products/productsInformation';
 import '../../../styles/Main/Product/Product.css';
 
@@ -24,8 +25,11 @@ const Product = () => {
             </section>
             <section className='product_information'>
                 <section className='product_information_top'>
-                    <h2>{product.title}</h2>
-                    <p>{product.description}</p>
+                    <div className='product_details'>
+                        <h2>{product.title}</h2>
+                        <p>{product.description}</p>
+                    </div>
+                    <AddToCartButton />
                 </section>
                 <section className='product_inforation_bottom'></section>
             </section>
