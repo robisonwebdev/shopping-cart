@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/AddToCartButton.css';
+import '../../../styles/Main/Product/AddToCartButton.css';
 
 const AddToCartButton = ({ addToCart, product }) => {
     return (
