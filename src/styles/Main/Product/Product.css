@@ -1,0 +1,24 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    
+    padding: 30px 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.product_image {
+    display: flex;
+    justify-content: center;
+    
+    height: auto;
+    width: 100%;
+}
+
+.product_image img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
