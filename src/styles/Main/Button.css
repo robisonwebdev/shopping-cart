@@ -2,6 +2,38 @@
     color: #000;
 }
 
+.go_back_button {
+    background-color: var(--white);
+    border: 2px solid var(--blueBlack);
+    border-radius: 5px;
+    color: var(--blueBlack);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 10px;
+    transition: 0.3s;
+  }
+  
+.go_back_button:hover {
+    background-color: var(--blueBlack);
+    color: var(--white);
+}
+
+.proceed_to_cart_button {
+    background-color: var(--blueBlack);
+    border: 2px solid var(--blueBlack);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 10px;
+    transition: 0.3s;
+  }
+  
+.proceed_to_cart_button:hover {
+    background-color: var(--white);
+    color: var(--blueBlack);
+}
+
 .welcome_button {
     background-color: var(--blueBlack);
     border: 2px solid var(--blueBlack);
