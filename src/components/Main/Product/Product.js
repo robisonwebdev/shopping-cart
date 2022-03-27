@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import AddToCartButton from './AddToCartButton';
+import Button from '../Button';
 import products from '../../../products/productsInformation';
 import '../../../styles/Main/Product/Product.css';
 
@@ -31,7 +32,10 @@ const Product = () => {
                     </div>
                     <AddToCartButton />
                 </section>
-                <section className='product_inforation_bottom'></section>
+                <section className='product_inforation_bottom'>
+                    <Button className='proceed_to_cart' linkTo='/cart' text='Proceed To Cart' />
+                    <Button className='go_back' linkTo='/shop' text='Go Back' />
+                </section>
             </section>
         </section>
     );
