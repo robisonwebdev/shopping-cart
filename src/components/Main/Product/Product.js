@@ -28,7 +28,10 @@ const Product = () => {
                 <section className='product_information_top'>
                     <div className='product_details'>
                         <h2>{product.title}</h2>
-                        <p>{product.description}</p>
+                        <p>
+                            <strong>About the house: </strong>
+                            {product.description}
+                        </p>
                     </div>
                     <AddToCartButton />
                 </section>
