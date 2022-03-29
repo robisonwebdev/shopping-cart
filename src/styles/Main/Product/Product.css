@@ -61,3 +61,9 @@
     height: auto;
     width: 100%;
 }
+
+@media only screen and (min-width: 525px) {
+    .product {
+        flex-direction: row;
+    }
+  }
