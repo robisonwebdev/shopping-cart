@@ -66,4 +66,14 @@
     .product {
         flex-direction: row;
     }
+
+    .product_image {
+        height: 100%;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .product_image img {
+        height: 100%;
+    }
   }
