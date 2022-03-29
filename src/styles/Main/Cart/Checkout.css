@@ -1,6 +1,6 @@
-.checkoutButton {
-    background-color: var(--black);
-    border: 2px solid var(--black);
+.checkout_button {
+    background-color: var(--blueBlack);
+    border: 2px solid var(--blueBlack);
     border-radius: 5px;
     color: var(--white);
     cursor: pointer;
@@ -9,7 +9,7 @@
     transition: 0.3s;
   }
   
-  .checkoutButton:hover {
+  .checkout_button:hover {
     background-color: var(--white);
-    color: var(--black);
+    color: var(--blueBlack);
   }
