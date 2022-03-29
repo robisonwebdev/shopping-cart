@@ -1,10 +1,14 @@
 import React from 'react';
-import '../styles/CheckoutButton.css';
+import '../../../styles/Main/Cart/Checkout.css'
 
-function checkoutAlert() {
-    alert('Thanks for trying my mockup shopping site.');
+const Checkout = () => {
+    const checkoutAlert = () => {
+        alert('Thanks for trying my mockup shopping site.');
+    };
+
+    return (
+        <button className='checkout_button' onClick={checkoutAlert}>Checkout</button>
+    );
 }
 
-const CheckoutButton = () => <button className='checkoutButton' onClick={() => {checkoutAlert()}}>Checkout</button>
-
-export default CheckoutButton;
+export default Checkout;
