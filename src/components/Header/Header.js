@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 import '../../styles/Header/Header.css';
 
-const Header = () => {
+const Header = ({ cartQuantity }) => {
     return (
         <header>
             <nav>
@@ -12,7 +12,7 @@ const Header = () => {
                 <ul className='nav_links'>
                     <NavLink linkTo={'/'} title='Home' />
                     <NavLink linkTo={'/shop'} title='Shop' />
-                    <NavLink linkTo={'/cart'} title='Cart' />
+                    <NavLink linkTo={'/cart'} title='Cart' value={cartQuantity} />
                 </ul>
             </nav>
         </header>
