@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/Header/NavLink.css';
 
-const NavLink = ({ linkTo, title  }) => {
+const NavLink = ({ linkTo, title, value }) => {
     return (
         <Link className='nav_link' to={linkTo}>
-            <li>{title}</li>
+            <li>{value === undefined ? title : `${title} (${value})`}</li>
         </Link>
     );
 };
