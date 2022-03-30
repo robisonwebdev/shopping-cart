@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import './styles/App.css';
 
 const App = () => {
+  const [cartQuantity, setCartQuantity] = useState(0);
+
   return (
     <div id='App'>
-      <Header />
+      <Header cartQuantity={cartQuantity} />
       <Main />
     </div>
   );
