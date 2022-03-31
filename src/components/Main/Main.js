@@ -7,7 +7,7 @@ import Shop from './Shop/Shop';
 import Welcome from './Welcome/Welcome';
 import '../../styles/Main/Main.css';
 
-const Main = () => {
+const Main = ({ cartItems, setCartItems }) => {
     return (
         <Routes>
             <Route path={'/'} element={<Layout />}>
@@ -18,7 +18,7 @@ const Main = () => {
             </Route>
 
             <Route path='/shop' element={<Layout />}>
-                <Route path=':id' element={<Product />} />    
+                <Route path=':id' element={<Product cartItems={cartItems} setCartItems={setCartItems} />} />    
             </Route>  
         </Routes>
     );
