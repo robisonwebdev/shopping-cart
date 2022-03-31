@@ -5,7 +5,7 @@ import Button from '../Button';
 import products from '../../../products/productsInformation';
 import '../../../styles/Main/Product/Product.css';
 
-const Product = () => {
+const Product = ({ cartItems, setCartItems }) => {
     const [product, setProduct] = useState({});
     const { id } = useParams();
 
@@ -33,7 +33,7 @@ const Product = () => {
                             {product.description}
                         </p>
                     </div>
-                    <AddToCartButton />
+                    <AddToCartButton cartItems={cartItems} product={product} setCartItems={setCartItems} />
                 </section>
                 <section className='product_information_bottom'>
                     <Button className='proceed_to_cart_button' linkTo='/cart' text='Proceed To Cart' />
