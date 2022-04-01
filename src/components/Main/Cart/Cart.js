@@ -3,7 +3,7 @@ import Checkout from './Checkout';
 import TotalPrice from './TotalPrice';
 import '../../../styles/Main/Cart/Cart.css';
 
-const Cart = () => {
+const Cart = ({ cartItems, setCartItems }) => {
     return (
         <section className='cart'>
             <h1>Cart</h1>
