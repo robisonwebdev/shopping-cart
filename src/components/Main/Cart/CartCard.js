@@ -6,11 +6,14 @@ const CartCard = ({ item }) => {
 
     return (
         <li className='cart_card'>
-            <img src={image} alt={title} />
-            <h4>{title}</h4>
-            <p>{price}</p>
-            <input type='number' value={quantity} />
-            <p>$23.00</p>
+            <div className='cart_card_information'>
+                <img src={image} alt={title} />
+                <h4>{title}</h4>
+                <p>{price}</p>
+                <input type='number' value={quantity} />
+                <p>$23.00</p>
+            </div>
+            <hr />
         </li>
     );
 };
