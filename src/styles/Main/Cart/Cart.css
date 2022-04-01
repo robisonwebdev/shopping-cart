@@ -7,3 +7,18 @@
     height: 100%;
     width: 100%;
 }
+
+.cart_items {
+    padding: 0 30px;
+    height: auto;
+    width: 100%;
+}
+
+.cart_items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: auto;
+    width: 100%;
+}
