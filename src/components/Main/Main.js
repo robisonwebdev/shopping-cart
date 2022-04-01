@@ -12,7 +12,7 @@ const Main = ({ cartItems, setCartItems }) => {
         <Routes>
             <Route path={'/'} element={<Layout />}>
                 <Route index element={<Welcome />} />             
-                <Route path='cart' element={<Cart />} />
+                <Route path='cart' element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
                 <Route path='shop' element={<Shop />} />
                 <Route path='*' element={<Error />} />
             </Route>
