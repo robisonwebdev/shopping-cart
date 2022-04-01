@@ -1,4 +1,32 @@
+.cart_card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.cart_card_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    height: auto;
+    width: 100%;
+}
+
+.cart_card h4 {
+    width: 120px;
+}
+
 .cart_card img {
+    display: none;
     height: 100px;
     width: 100px;
+}
+
+.cart_card input {
+    width: 50px;
 }
