@@ -17,7 +17,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                     {mapCartItems}
                 </ul>
             </section>
-            <TotalPrice />
+            <TotalPrice cartItems={cartItems} />
             <Checkout />
         </section>
     );
