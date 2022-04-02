@@ -17,7 +17,7 @@ const TotalPrice = ({ cartItems }) => {
 
     return (
         <div className='total_price'>
-            {/* <h3>{`Total: $${getTotal()}`}</h3> */}
+            <h3>{`Total: $${getTotal()}`}</h3>
         </div>
     );
 }
