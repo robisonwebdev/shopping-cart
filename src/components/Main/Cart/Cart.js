@@ -12,11 +12,20 @@ const Cart = ({ cartItems, setCartItems }) => {
     return (
         <section className='cart'>
             <h1>Cart</h1>
-            <section className='cart_items'>
-                <ul>
+            <table className='cart_items'>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th className='th_product'>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
                     {mapCartItems}
-                </ul>
-            </section>
+                </tbody>
+            </table>
             <TotalPrice cartItems={cartItems} />
             <Checkout />
         </section>
