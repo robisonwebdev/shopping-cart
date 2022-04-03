@@ -24,3 +24,7 @@
 .cart_items thead tr th {
   border-bottom: 2px solid black;
 }
+
+.th_product {
+    text-align: start;
+}
