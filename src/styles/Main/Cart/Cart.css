@@ -2,23 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     gap: 25px;
 
+    margin-top: 50px;
     height: 100%;
     width: 100%;
 }
 
 .cart_items {
-    padding: 0 30px;
-    height: auto;
+    border-spacing: 0;
+    padding: 10px 20px;
+    text-align: center;
     width: 100%;
 }
 
-.cart_items ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.cart_items thead {
+    font-size: 0.85rem;
+}
 
-    height: auto;
-    width: 100%;
+.cart_items thead tr th {
+  border-bottom: 2px solid black;
 }
