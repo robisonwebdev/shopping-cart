@@ -1,21 +1,6 @@
-.cart_card {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    height: 100%;
-    width: 100%;
-}
-
-.cart_card_information {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    padding: 2px 0;
-    height: auto;
-    width: 100%;
+.cart_card td {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
 }
 
 .cart_card h4 {
@@ -30,6 +15,10 @@
 
 .cart_card input {
     width: 50px;
+}
+
+.td_product {
+    text-align: start;
 }
 
 @media only screen and (min-width: 500px) {
