@@ -5,16 +5,13 @@ const CartCard = ({ item }) => {
     const { image, price, quantity, title } = item;
 
     return (
-        <li className='cart_card'>
-            <div className='cart_card_information'>
-                <img src={image} alt={title} />
-                <h4>{title}</h4>
-                <p>{price}</p>
-                <input type='number' value={quantity} />
-                <p>$23.00</p>
-            </div>
-            <hr />
-        </li>
+        <tr className='cart_card'>
+            <td><img src={image} alt={title} /></td>
+            <td className='td_product'><h4>{title}</h4></td>
+            <td><p>{price}</p></td>
+            <td><input type='number' value={quantity} /></td>
+            <td><p>$23.00</p></td>
+        </tr>
     );
 };
 
