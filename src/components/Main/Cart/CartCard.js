@@ -22,7 +22,9 @@ const CartCard = ({ cartItems, item, setCartItems }) => {
             return obj;
         });
 
-        setCartItems(newItemQuantity);
+        const removeItem = cartItems.filter(obj => obj.id !== item.id);
+
+        quantity > 0 ? setCartItems(newItemQuantity) : setCartItems(removeItem);
     };
 
     useEffect(() => {
