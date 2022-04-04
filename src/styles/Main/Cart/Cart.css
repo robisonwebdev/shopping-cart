@@ -11,6 +11,10 @@
     max-width: 650px;
 }
 
+.cart h1 {
+    font-size: 1.7rem;
+}
+
 .cart_items {
     border-spacing: 0;
     padding: 10px 20px;
