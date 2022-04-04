@@ -6,7 +6,11 @@ import '../../../styles/Main/Cart/Cart.css';
 
 const Cart = ({ cartItems, setCartItems }) => {
     const mapCartItems = cartItems.map(item => {
-        return <CartCard key={item.id} item={item} />;
+        if (item.quantity > 0) {
+            return <CartCard cartItems={cartItems} key={item.id} item={item} setCartItems={setCartItems} />;
+        };
+
+        return null;
     });
 
     return (
