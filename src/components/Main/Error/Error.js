@@ -1,8 +1,11 @@
 import React from 'react';
+import '../../../styles/Main/Error/Error.css';
 
 const Error = () => {
     return (
-        <section>Error</section>
+        <section className='error'>
+            <h1>Page not found</h1>
+        </section>
     );
 };
 
