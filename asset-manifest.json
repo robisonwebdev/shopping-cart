@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.caf17937.chunk.css",
-    "main.js": "/shopping-cart/static/js/main.3cc8211a.chunk.js",
-    "main.js.map": "/shopping-cart/static/js/main.3cc8211a.chunk.js.map",
-    "runtime-main.js": "/shopping-cart/static/js/runtime-main.8fe60f94.js",
-    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.8fe60f94.js.map",
-    "static/js/2.8639de72.chunk.js": "/shopping-cart/static/js/2.8639de72.chunk.js",
-    "static/js/2.8639de72.chunk.js.map": "/shopping-cart/static/js/2.8639de72.chunk.js.map",
+    "main.css": "/shopping-cart/static/css/main.a970a6bf.css",
+    "main.js": "/shopping-cart/static/js/main.22d23089.js",
+    "static/media/mobileHouse.png": "/shopping-cart/static/media/mobileHouse.c751ec2398bdb9d37060.png",
+    "static/media/blueHouse.png": "/shopping-cart/static/media/blueHouse.8e77295235e05445f2d0.png",
+    "static/media/brownHouse.png": "/shopping-cart/static/media/brownHouse.b571d788951952838352.png",
+    "static/media/treeHouse.png": "/shopping-cart/static/media/treeHouse.68e3828ef2e707de9b69.png",
+    "static/media/rusticHouse.png": "/shopping-cart/static/media/rusticHouse.9780821aeb2243d9d4de.png",
+    "static/media/whiteHouse.png": "/shopping-cart/static/media/whiteHouse.6e6b5767b9cd5b622676.png",
+    "static/media/modernHouse.png": "/shopping-cart/static/media/modernHouse.57305dfb9c0f50680d2c.png",
+    "static/media/flowerHouse.png": "/shopping-cart/static/media/flowerHouse.00afd228bccd9d668b36.png",
     "index.html": "/shopping-cart/index.html",
-    "static/css/main.caf17937.chunk.css.map": "/shopping-cart/static/css/main.caf17937.chunk.css.map",
-    "static/js/2.8639de72.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.8639de72.chunk.js.LICENSE.txt"
+    "main.a970a6bf.css.map": "/shopping-cart/static/css/main.a970a6bf.css.map",
+    "main.22d23089.js.map": "/shopping-cart/static/js/main.22d23089.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fe60f94.js",
-    "static/js/2.8639de72.chunk.js",
-    "static/css/main.caf17937.chunk.css",
-    "static/js/main.3cc8211a.chunk.js"
+    "static/css/main.a970a6bf.css",
+    "static/js/main.22d23089.js"
   ]
 }
