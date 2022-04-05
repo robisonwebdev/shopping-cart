@@ -27,6 +27,10 @@
   width: 100%;
 }
 
+.shop_card_name:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 500px) {
   .shop_card_image {
     width: 400px;
